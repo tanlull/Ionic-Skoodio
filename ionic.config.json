@@ -1,0 +1,7 @@
+{
+  "name": "Ionic-Skoodio",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
