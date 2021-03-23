@@ -4,7 +4,7 @@ import { RouteComponentProps } from 'react-router';
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
 
-const Home: React.FC<RouteComponentProps> = (props) => {
+const NewItem: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -13,16 +13,10 @@ const Home: React.FC<RouteComponentProps> = (props) => {
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
-        <IonList>
-          <IonItem> <p>item 1/</p></IonItem>
-            <IonItem> <p>item 2</p></IonItem>
-        </IonList>
-              <IonButton onClick={() => props.history.push('/new')}>
-                <p> Go to newItem</p>
-              </IonButton>
+       New Item Page
        </IonContent>
     </IonPage>
   );
 };
 
-export default Home;
+export default NewItem;
