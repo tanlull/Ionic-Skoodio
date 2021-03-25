@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonItem, IonPage, IonButton, IonTitle, IonToolbar, IonList } from '@ionic/react';
+import { IonContent, IonHeader, IonItem, IonPage, IonButton, IonTitle, IonToolbar, IonList, IonBackButton } from '@ionic/react';
 import React from 'react';
 import { RouteComponentProps } from 'react-router';
 import ExploreContainer from '../components/ExploreContainer';
@@ -9,7 +9,11 @@ const NewItem: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Blank</IonTitle>
+          <IonButton slot='start'>
+            <IonBackButton defaultHref="/Home"/>
+
+          </IonButton>
+          <IonTitle>New Item</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
